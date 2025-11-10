@@ -1,0 +1,43 @@
+<% layout('layout') -%>
+
+<h2>Sign Up</h2>
+
+<form action="/auth/signup" method="post">
+  <label
+    >First name:<br />
+    <input type="text" name="firstName" required /> </label
+  ><br />
+
+  <label
+    >Last name:<br />
+    <input type="text" name="lastName" required /> </label
+  ><br />
+
+  <label
+    >Email:<br />
+    <input type="email" name="email" required /> </label
+  ><br />
+
+  <label
+    >Password:<br />
+    <input type="password" name="password" required minlength="8" /> </label
+  ><br />
+
+  <label
+    >Confirm Password:<br />
+    <input
+      type="password"
+      name="confirmPassword"
+      required
+      minlength="8"
+    /> </label
+  ><br />
+
+  <!-- Demo only -->
+  <label>
+    <input type="checkbox" name="isAdmin" />
+    Register as admin (for demo/testing) </label
+  ><br />
+
+  <button type="submit">Sign Up</button>
+</form>

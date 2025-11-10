@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Private Club</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Private Club</a></h1>
+      <nav>
+        <% if (!currentUser) { %>
+        <a href="/auth/login">Login</a> |
+        <a href="/auth/signup">Sign Up</a>
+        <% } else { %> Hello, <strong><%= currentUser.firstName %></strong> |
+        <a href="/auth/logout">Logout</a>
+        <% if (!currentUser.isMember) { %> |
+        <a href="/auth/join-club">Join the Club</a>
+        <% } %> <% } %>
+      </nav>
+    </header>
+
+    <main><% include partials/flash %> <%- body %></main>
+
+    <footer>
+      <p style="margin-top: 40px; font-size: 0.9em; color: #666">
+        © <%= new Date().getFullYear() %> Private Club
+      </p>
+    </footer>
+  </body>
+</html>

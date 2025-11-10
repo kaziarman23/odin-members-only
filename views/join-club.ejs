@@ -1,0 +1,14 @@
+<% layout('layout') -%>
+
+<h2>Join the Club</h2>
+
+<p>Enter the secret club passcode to become a member.</p>
+
+<form action="/auth/join-club" method="post">
+  <label
+    >Club Passcode:<br />
+    <input type="password" name="passcode" required /> </label
+  ><br />
+
+  <button type="submit">Join the Club</button>
+</form>

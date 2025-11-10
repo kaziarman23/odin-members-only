@@ -1,0 +1,78 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 20px auto;
+  max-width: 800px;
+  background: #f8f9fa;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+h1 a {
+  color: inherit;
+}
+
+ul.message-list {
+  list-style: none;
+  padding: 0;
+}
+
+.message {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.message small {
+  display: block;
+  margin-top: 10px;
+  color: #777;
+}
+
+button {
+  background: #0077cc;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005fa3;
+}
+
+.flashes {
+  list-style: none;
+  padding: 0;
+}
+
+.flashes li {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.flashes .error {
+  background: #fdecea;
+  color: #b00020;
+}
+
+.flashes .success {
+  background: #e6ffed;
+  color: #008000;
+}

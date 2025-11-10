@@ -1,0 +1,8 @@
+<% if (messages && Object.keys(messages).length) { %>
+<ul class="flashes">
+  <% Object.keys(messages).forEach(type => { %> <% messages[type].forEach(msg =>
+  { %>
+  <li class="<%= type %>"><%= msg %></li>
+  <% }) %> <% }) %>
+</ul>
+<% } %>
